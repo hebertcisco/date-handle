@@ -1,7 +1,7 @@
 {
-  "name": "ts-npm-package-boilerplate",
-  "version": "0.1.0",
-  "description": "TypeScript NPM Module Boilerplate",
+  "name": "date-handle",
+  "version": "0.0.1",
+  "description": "Handle with dates on JS and TS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hebertcisco/ts-npm-package-boilerplate.git"
+    "url": "git+https://github.com/hebertcisco/date-handle.git"
   },
   "keywords": [
     "boilerplate",
@@ -27,11 +27,12 @@
   "author": "Hebert Cisco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hebertcisco/ts-npm-package-boilerplate/issues"
+    "url": "https://github.com/hebertcisco/date-handle/issues"
   },
-  "homepage": "https://github.com/hebertcisco/ts-npm-package-boilerplate#readme",
+  "homepage": "https://github.com/hebertcisco/date-handle#readme",
   "devDependencies": {
     "@types/jest": "^26.0.15",
+    "@types/moment": "^2.13.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "eslint": "^7.11.0",
@@ -42,5 +43,8 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
