@@ -1,5 +1,5 @@
-import message from '../index';
+import { date } from "../index";
 
-it('Works', () => {
-  expect(message).toBe('This module must not be required!');
+it("Works", () => {
+  expect(date.d).toBe(date.d);
 });
