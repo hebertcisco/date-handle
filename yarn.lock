@@ -604,7 +604,7 @@
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
-"@types/moment@^2.13.0":
+"@types/moment@2.13.0":
   version "2.13.0"
   resolved "https://registry.npmjs.org/@types/moment/-/moment-2.13.0.tgz"
   integrity sha1-YE69GJvDvDShVIaJQE5hoqSqyJY=
