@@ -1,6 +1,6 @@
 {
   "name": "date-handle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Handle with dates on JS and TS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
