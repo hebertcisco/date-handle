@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/hebertcisco/date-handle#readme",
   "devDependencies": {
-    "@types/jest": "27.0.3",
+    "@types/jest": "27.4.0",
     "@types/moment": "2.13.0",
     "@typescript-eslint/eslint-plugin": "5.8.0",
     "@typescript-eslint/parser": "5.8.0",
