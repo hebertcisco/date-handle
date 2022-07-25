@@ -1,26 +1,23 @@
 import moment from 'moment';
 
 export class DateHandle {
-  public  day: number;
+  public day: number;
   constructor() {
     this.day = moment().weekday();
   }
-  public  dayOfWeek = (thisDay: number): boolean => {
+  public dayOfWeek = (thisDay: number): boolean => {
     return this.day === thisDay;
   };
-  public  isSaturday = (): boolean => {
+  public isSaturday = (): boolean => {
     return this.dayOfWeek(6);
   };
-  public  isSunday = (): boolean => {
+  public isSunday = (): boolean => {
     return this.dayOfWeek(0);
   };
-  public  isMonday = (): boolean => {
+  public isMonday = (): boolean => {
     return this.dayOfWeek(1);
   };
-  static future(
-    many: number | Date | any,
-    timeType?: 'days' | 'months' | 'years',
-  ): string | any {
+  static future(many: number | Date | any, timeType?: 'days' | 'months' | 'years'): string | any {
     switch (timeType) {
       case 'days':
         return moment().add(many, 'days').format('YYYY-MM-DD');
@@ -30,10 +27,7 @@ export class DateHandle {
         return moment().add(many, 'years').format('YYYY-MM-DD');
     }
   }
-  static futureFully(
-    many: number | Date | any,
-    timeType?: 'days' | 'months' | 'years',
-  ): string | any {
+  static futureFully(many: number | Date | any, timeType?: 'days' | 'months' | 'years'): string | any {
     switch (timeType) {
       case 'days':
         return this.future(many, 'days').format('YYYY-MM-DD HH:mm:ss');
@@ -43,10 +37,7 @@ export class DateHandle {
         return this.future(many, 'years').format('YYYY-MM-DD HH:mm:ss');
     }
   }
-  static past(
-    many: number | Date | any,
-    timeType?: 'days' | 'months' | 'years',
-  ): string | any {
+  static past(many: number | Date | any, timeType?: 'days' | 'months' | 'years'): string | any {
     switch (timeType) {
       case 'days':
         return moment().subtract(many, 'days').format('YYYY-MM-DD');
@@ -56,10 +47,7 @@ export class DateHandle {
         return moment().subtract(many, 'years').format('YYYY-MM-DD');
     }
   }
-  static pastFully(
-    many: number | Date | any,
-    timeType?: 'days' | 'months' | 'years',
-  ): string | any {
+  static pastFully(many: number | Date | any, timeType?: 'days' | 'months' | 'years'): string | any {
     switch (timeType) {
       case 'days':
         return moment().subtract(many, 'days').format('YYYY-MM-DD HH:mm:ss');
@@ -77,6 +65,5 @@ export class DateHandle {
     nowFully: moment().format('YYYY-MM-DD HH:mm:ss'),
     h: moment().format('HH:mm:ss'),
   };
-  static yesterday = (): string =>
-    moment().subtract(1, 'days').format('YYYY-MM-DD');
+  static yesterday = (): string => moment().subtract(1, 'days').format('YYYY-MM-DD');
 }

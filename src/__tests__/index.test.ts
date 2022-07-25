@@ -1,5 +1,5 @@
-import { date } from "../index";
+import { date } from '../index';
 
-it("Works", () => {
+it('Works', () => {
   expect(date.d).toBe(date.d);
 });
